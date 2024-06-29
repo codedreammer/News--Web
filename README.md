@@ -1,2 +1,3 @@
 # News--Web
-using js,HTML,CSS made a news web page 
+<h1>News Application</h1>
+<h4>made a news website using<strong> html,css&js</strong></h4>
