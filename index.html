@@ -13,19 +13,19 @@
 <body>
 <nav>
 <div class="main-nav container flex">
-    <a href="#" class="company-logo">
+    <a href="#" onclick="reload()" class="company-logo">
         <img src="logo.png" alt="company logo">
     </a>
     <div class="nav-links">
         <ul class="flex">
-            <li class="hover-link nav-item">IPL</li>
-            <li class="hover-link nav-item">Finance</li>
-            <li class="hover-link nav-item">Politics</li>
+            <li class="hover-link nav-item" id="T20World-cup" onclick="onNavIteamClick('T20World-cup')">T20Worldcup</li>
+            <li class="hover-link nav-item" id="Finance" onclick="onNavIteamClick('Finance')">Finance</li>
+            <li class="hover-link nav-item"id="Election-2024" onclick="onNavIteamClick('Election-2024')">Election-2024</li>
         </ul>
     </div>
     <div class="search-bar flex">
-    <input type="text" class="news-input" placeholder="e.g. Science">
-    <button class="search-button">Search</button>
+    <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+    <button id="search-button" class="search-button">Search</button>
 </div>
 </div>
 </nav>

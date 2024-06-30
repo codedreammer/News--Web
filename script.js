@@ -13,13 +13,6 @@ async function fetchNews(query) {
     bindData(data.articles);
 }
 
-
-async function fetchNews(query) {
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-    const data = await res.json();
-    bindData(data.articles);
-}
-
 function bindData(articles) {
     const cardsContainer = document.getElementById("cards-container");
     const newsCardTemplate = document.getElementById("template-news-card");
@@ -56,7 +49,7 @@ function fillDataInCard(cardClone, article) {
 }
 
 let curSelectedNav = null;
-function onNavItemClick(id) {
+function onNavIteamClick(id) {
     fetchNews(id);
     const navItem = document.getElementById(id);
     curSelectedNav?.classList.remove("active");
